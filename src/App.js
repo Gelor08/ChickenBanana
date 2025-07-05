@@ -47,7 +47,6 @@ function App() {
     const updated = [...clickedCells];
     updated[index] = true;
     setClickedCells(updated);
-
     // If player clicked the wrong meme, end the game
     if (cellImages[index] !== playerChoice) {
       setGameOver(true);
